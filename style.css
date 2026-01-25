@@ -147,6 +147,16 @@ h1 {
     color: #721c24;
 }
 
+.explanation {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #fff3cd;
+    border-left: 3px solid #ffc107;
+    font-size: 0.85rem;
+    color: #856404;
+    line-height: 1.4;
+}
+
 button {
     background-color: #007bff;
     color: white;

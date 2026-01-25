@@ -226,6 +226,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 optionElement.classList.add('correct');
             } else if (userSelection.includes(optionIndex)) {
                 optionElement.classList.add('incorrect');
+                
+                // Dodaj wyjaśnienie dlaczego odpowiedź jest błędna
+                if (question.options[optionIndex].why_false) {
+                    const explanation = document.createElement('div');
+                    explanation.classList.add('explanation');
+                    explanation.textContent = question.options[optionIndex].why_false;
+                    optionElement.appendChild(explanation);
+                }
             }
         });
     }
