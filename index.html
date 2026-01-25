@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz-header">
+            <h1>Quiz</h1>
+            <div id="controls-container">
+                <div id="shuffle-mode-container">
+                    <label for="shuffle-mode">
+                        <input type="checkbox" id="shuffle-mode">
+                        Losowa kolejność pytań
+                    </label>
+                </div>
+                <div id="questions-per-page-container">
+                    <label for="questions-per-page">Pytań na stronę:</label>
+                    <input type="number" id="questions-per-page" value="1" min="1">
+                </div>
+                <div id="exam-mode-container">
+                    <input type="number" id="exam-questions" placeholder="Liczba pytań" min="1">
+                    <button id="start-exam">Rozpocznij egzamin</button>
+                </div>
+            </div>
+        </div>
+        <div id="quiz"></div>
+        <div id="pagination-container">
+            <button id="prev-page">Poprzednia</button>
+            <span id="page-info"></span>
+            <button id="next-page">Następna</button>
+        </div>
+        <button id="submit">Zatwierdź i zobacz wyniki</button>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
