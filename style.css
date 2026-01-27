@@ -86,11 +86,37 @@ h1 {
     align-items: center;
     gap: 1rem;
     margin-top: 1.5rem;
+    flex-wrap: wrap;
 }
 
 #pagination-container button {
     width: auto;
     padding: 0.5rem 1rem;
+}
+
+#goto-question-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid #ddd;
+}
+
+#goto-question-container label {
+    font-size: 0.9rem;
+}
+
+#goto-question {
+    width: 70px;
+    padding: 0.4rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#goto-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
 }
 
 #page-info {

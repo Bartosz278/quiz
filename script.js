@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const startExamButton = document.getElementById('start-exam');
     const examQuestionsInput = document.getElementById('exam-questions');
     const shuffleModeCheckbox = document.getElementById('shuffle-mode');
+    const gotoQuestionInput = document.getElementById('goto-question');
+    const gotoButton = document.getElementById('goto-button');
 
     let quizData = null;
     let allQuestions = [];
@@ -50,6 +52,34 @@ document.addEventListener('DOMContentLoaded', () => {
             resultsContainer.innerHTML = '';
             displayCurrentPage();
         }
+    }
+
+    function goToQuestion() {
+        const questionNumber = parseInt(gotoQuestionInput.value);
+        const questionsSource = examMode ? examQuestions : displayQuestions_list;
+        
+        if (!questionNumber || questionNumber < 1) {
+            alert('Proszę wpisać poprawny numer pytania');
+            return;
+        }
+        
+        // Sprawdź czy numer pytania jest w zakresie
+        if (questionNumber > questionsSource.length) {
+            alert(`Maksymalny numer pytania to ${questionsSource.length}`);
+            return;
+        }
+        
+        // Oblicz na której stronie jest pytanie o danym numerze (indeks = numer - 1)
+        const questionIndex = questionNumber - 1;
+        const targetPage = Math.floor(questionIndex / questionsPerPage) + 1;
+        
+        if (targetPage !== currentPage) {
+            currentPage = targetPage;
+            displayCurrentPage();
+            window.scrollTo(0, 0);
+        }
+        
+        gotoQuestionInput.value = '';
     }
 
     function displayCurrentPage() {
@@ -371,6 +401,14 @@ document.addEventListener('DOMContentLoaded', () => {
     questionsPerPageInput.addEventListener('change', () => {
         currentPage = 1;
         displayCurrentPage();
+    });
+
+    gotoButton.addEventListener('click', goToQuestion);
+    
+    gotoQuestionInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            goToQuestion();
+        }
     });
 
     loadQuizData();
