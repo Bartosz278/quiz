@@ -11,7 +11,7 @@
       },
       {
         "text": "Exit",
-        "correct": false,
+        "correct": true,
         "why false": "Used for activities performed once upon leaving a state."
       },
       {
@@ -21,7 +21,7 @@
       },
       {
         "text": "Entry",
-        "correct": false,
+        "correct": true,
         "why false": "Used for activities performed once upon entering a state."
       },
       {
