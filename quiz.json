@@ -1,619 +1,2863 @@
 {
   "questions": [
-  {
-    "id": 1,
-    "question": "Aktywności wewnątrz danego stanu na diagramie STD są poprzedzone słowem kluczowym:",
-    "options": [
-      {
-        "text": "Action",
-        "correct": false,
-        "why false": "Not a standard UML state keyword."
-      },
-      {
-        "text": "Exit",
-        "correct": true,
-        "why false": "Used for activities performed once upon leaving a state."
-      },
-      {
-        "text": "Return",
-        "correct": false,
-        "why false": "Used in sequence diagrams or methods, not state internal activities."
-      },
-      {
-        "text": "Entry",
-        "correct": true,
-        "why false": "Used for activities performed once upon entering a state."
-      },
-      {
-        "text": "Do",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Call",
-        "correct": false,
-        "why false": "Used for invoking operations, not the keyword for internal ongoing activity."
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "question": "Na diagramie aktywności węzeł decyzyjny pozwala na wybór więcej niż dwóch ścieżek alternatywnych.",
-    "options": [
-      {
-        "text": "Prawda",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Fałsz",
-        "correct": false,
-        "why false": "A decision node can have multiple outgoing paths as long as the guard conditions are mutually exclusive."
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "question": "Wymień trzy główne perspektywy, jakich można użyć przy tworzeniu klas:",
-    "options": [
-      {
-        "text": "perspektywa specyfikacyjna",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "perspektywa implementacyjna",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "perspektywa logiczna",
-        "correct": false,
-        "why false": "Not one of the standard three perspectives defined by Fowler (Conceptual, Specification, Implementation)."
-      },
-      {
-        "text": "perspektywa pojęciowa",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "perspektywa programowa",
-        "correct": false,
-        "why false": "Not a standard term in this context."
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "question": "Który ze stereotypów może występować w diagramie komponentów?",
-    "options": [
-      {
-        "text": "include",
-        "correct": false,
-        "why false": "Used in Use Case diagrams."
-      },
-      {
-        "text": "draft",
-        "correct": false,
-        "why false": "Not a standard UML stereotype."
-      },
-      {
-        "text": "entity",
-        "correct": true,
-        "why false": ""
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "question": "Na diagramie czynności węzeł scalenia jest:",
-    "options": [
-      {
-        "text": "węzłem sterującym, który dzieli przepływ na wiele jednoczesnych przepływów",
-        "correct": false,
-        "why false": "This describes a Fork Node (węzeł rozwidlenia)."
-      },
-      {
-        "text": "elementem synchronizującym",
-        "correct": false,
-        "why false": "This describes a Join Node (węzeł połączenia/synchronizacji)."
-      },
-      {
-        "text": "węzłem, który scala kilka równolegle wykonywanych przepływów w jeden.",
-        "correct": true,
-        "why false": ""
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "question": "Model z prototypem ma cechy modelu iteracyjno-przyrostowego.",
-    "options": [
-      {
-        "text": "Prawda",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Fałsz",
-        "correct": false,
-        "why false": "Prototyping involves iterative refinement and incremental development of the system."
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "question": "Wstaw brakujące słowo (Identyfikuje czynność wykonywaną w momencie wyjścia obiektu z danego stanu):",
-    "options": [
-      {
-        "text": "Exit",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Entry",
-        "correct": false,
-        "why false": "Identifies action upon entering a state."
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "question": "Wstaw brakujące słowo (identyfikuje czynność automatycznie wykonywaną na obiekcie w momencie jego przejścia w dany stan):",
-    "options": [
-      {
-        "text": "Entry",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Exit",
-        "correct": false,
-        "why false": "Identifies action upon exiting a state."
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "question": "Przedstawiony na diagramie sekwencji fragment scenariusza dotyczący komunikacji pomiędzy obiektami w sytuacji poprawnego oraz błędnego zalogowania powinien zostać oznaczony słowem kluczowym:",
-    "options": [
-      {
-        "text": "loop",
-        "correct": false,
-        "why false": "Used for iterations/loops."
-      },
-      {
-        "text": "opt",
-        "correct": false,
-        "why false": "Used for a single optional sequence, not mutually exclusive alternatives."
-      },
-      {
-        "text": "alt",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "break",
-        "correct": false,
-        "why false": "Used for breaking out of a loop or sequence."
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "question": "Na diagramie sekwencji nie można przedstawić procesów równoległych.",
-    "options": [
-      {
-        "text": "Prawda",
-        "correct": false,
-        "why false": "UML Sequence diagrams support parallel processing using the 'par' combined fragment."
-      },
-      {
-        "text": "Fałsz",
-        "correct": true,
-        "why false": ""
-      }
-    ]
-  },
-  {
-    "id": 11,
-    "question": "Związki na diagramie przypadków użycia mogą opisywać zależności pomiędzy takimi elementami jak:",
-    "options": [
-      {
-        "text": "Agregacja przypadków użycia",
-        "correct": false,
-        "why false": "Aggregation is a class diagram relationship, not used between Use Cases."
-      },
-      {
-        "text": "Rozszerzający przypadek użycia",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Bazowy przypadek użycia",
-        "correct": false,
-        "why false": "Base is a role, not a relationship type itself."
-      },
-      {
-        "text": "Hierarchia przypadków użycia",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Zawierany przypadek użycia",
-        "correct": true,
-        "why false": ""
-      }
-    ]
-  },
-  {
-    "id": 12,
-    "question": "Dopasuj elementy z rysunku (Przyjęcie do szpitala <<include>> Przydzielenie łóżka): Zawierany przypadek użycia",
-    "options": [
-      {
-        "text": "Przydzielenie łóżka",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Przyjęcie do szpitala",
-        "correct": false,
-        "why false": "This is the Base case."
-      }
-    ]
-  },
-  {
-    "id": 13,
-    "question": "Dopasuj elementy z rysunku (Przyjęcie do szpitala <<include>> Przydzielenie łóżka): Bazowy przypadek użycia",
-    "options": [
-      {
-        "text": "Przyjęcie do szpitala",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Przydzielenie łóżka",
-        "correct": false,
-        "why false": "This is the Included case."
-      }
-    ]
-  },
-  {
-    "id": 14,
-    "question": "Elementami diagramu wdrożenia są:",
-    "options": [
-      {
-        "text": "Węzły",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Zależności",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Czynności",
-        "correct": false,
-        "why false": "Elements of Activity Diagrams."
-      },
-      {
-        "text": "Asocjacje",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Stany obiektów",
-        "correct": false,
-        "why false": "Elements of State Machine Diagrams."
-      },
-      {
-        "text": "Aktorzy",
-        "correct": false,
-        "why false": "Primary elements of Use Case Diagrams, though can appear elsewhere."
-      }
-    ]
-  },
-  {
-    "id": 15,
-    "question": "Interfejsy na diagramie komponentów nie zapewniają wymiany danych pomiędzy komponentami.",
-    "options": [
-      {
-        "text": "Prawda",
-        "correct": false,
-        "why false": "Interfaces explicitly define the contracts for data and behavior exchange between components."
-      },
-      {
-        "text": "Fałsz",
-        "correct": true,
-        "why false": ""
-      }
-    ]
-  },
-  {
-    "id": 16,
-    "question": "Partycja aktywności to część diagramu czynności, która grupuje czynności charakteryzujące się podobnymi cechami.",
-    "options": [
-      {
-        "text": "Prawda",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Fałsz",
-        "correct": false,
-        "why false": "Partitions (Swimlanes) group actions, typically by responsible actor/department."
-      }
-    ]
-  },
-  {
-    "id": 17,
-    "question": "Dla jakiego modelu cyklu życia systemu istnieje możliwość szkoleń zanim zbudowany zostanie pełny system?",
-    "options": [
-      {
-        "text": "model z prototypem",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "model V",
-        "correct": false,
-        "why false": "Typically focuses on validation/verification phases; training occurs later."
-      }
-    ]
-  },
-  {
-    "id": 18,
-    "question": "Który model cyklu życia systemu jest jednym z najpopularniejszych podejść do procesu testowania?",
-    "options": [
-      {
-        "text": "model V",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "model z prototypem",
-        "correct": false,
-        "why false": "Focuses on requirements gathering and UI validation, not the testing process structure itself."
-      }
-    ]
-  },
-  {
-    "id": 19,
-    "question": "Na diagramie klas może wystąpić klasa asocjacyjna.",
-    "options": [
-      {
-        "text": "Prawda",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Fałsz",
-        "correct": false,
-        "why false": "UML supports association classes to add attributes to a relationship."
-      }
-    ]
-  },
-  {
-    "id": 20,
-    "question": "Klucz obcy może przyjmować wartość NULL.",
-    "options": [
-      {
-        "text": "Prawda",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Fałsz",
-        "correct": false,
-        "why false": "Foreign keys can be NULL if the relationship is optional."
-      }
-    ]
-  },
-  {
-    "id": 21,
-    "question": "Ścieżki komunikacji pomiędzy węzłami diagramu wdrożenia są określane przy pomocy stereotypu, który określa rodzaje komunikacji.",
-    "options": [
-      {
-        "text": "Prawda",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Fałsz",
-        "correct": false,
-        "why false": "Communication paths are often stereotyped with protocols (e.g., <<HTTP>>)."
-      }
-    ]
-  },
-  {
-    "id": 22,
-    "question": "Dwie klasy mogą być powiązane ze sobą kilkoma asocjacjami.",
-    "options": [
-      {
-        "text": "Prawda",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "Fałsz",
-        "correct": false,
-        "why false": "Classes can have multiple distinct relationships representing different semantic connections."
-      }
-    ]
-  },
-  {
-    "id": 23,
-    "question": "Diagram sekwencji składa się z następujących elementów:",
-    "options": [
-      {
-        "text": "komunikaty",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "linie życia",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "relacje między obiektami",
-        "correct": false,
-        "why false": "Static relationships are shown in Class Diagrams, not Sequence Diagrams."
-      },
-      {
-        "text": "obiekty",
-        "correct": true,
-        "why false": ""
-      }
-    ]
-  },
-  {
-    "id": 24,
-    "question": "Klucz główny może być utworzony na:",
-    "options": [
-      {
-        "text": "tylko na jednej kolumnie",
-        "correct": false,
-        "why false": "Composite primary keys are allowed."
-      },
-      {
-        "text": "na jednej lub większej liczbie kolumn",
-        "correct": true,
-        "why false": ""
-      }
-    ]
-  },
-  {
-    "id": 25,
-    "question": "Węzły na diagramie wdrożenia odpowiadają różnym urządzeniom. Nie można w tych węzłach wskazywać oprogramowania systemowego, serwerowego i bazodanowego.",
-    "options": [
-      {
-        "text": "Prawda",
-        "correct": false,
-        "why false": "Nodes can represent Execution Environments (e.g., OS, DB Server) in addition to Devices."
-      },
-      {
-        "text": "Fałsz",
-        "correct": true,
-        "why false": ""
-      }
-    ]
-  },
-  {
-    "id": 26,
-    "question": "Do graficznego prezentowania scenariuszy służą diagramy:",
-    "options": [
-      {
-        "text": "przypadków użycia",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "sekwencji",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "czynności",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "aktywności",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "wdrożenia",
-        "correct": false,
-        "why false": "Shows static deployment architecture, not scenarios."
-      }
-    ]
-  },
-  {
-    "id": 27,
-    "question": "Określa komponent reprezentujący tabelę bazy danych (Dopasuj):",
-    "options": [
-      {
-        "text": "entity",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "file",
-        "correct": false,
-        "why false": "Represents source code or data files."
-      }
-    ]
-  },
-  {
-    "id": 28,
-    "question": "Określa komponent reprezentujący dokument zawierający kod źródłowy lub dane (Dopasuj):",
-    "options": [
-      {
-        "text": "file",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "entity",
-        "correct": false,
-        "why false": "Represents a database table."
-      }
-    ]
-  },
-  {
-    "id": 29,
-    "question": "Przypadek użycia połączony z innym przypadkiem (głównym) powiązaniem typu include będzie częścią przepływu przypadku głównego, kiedy zostanie spełniony wcześniej określony warunek.",
-    "options": [
-      {
-        "text": "Prawda",
-        "correct": false,
-        "why false": "Include relationships indicate mandatory inclusion. Conditional execution is defined by the Extend relationship."
-      },
-      {
-        "text": "Fałsz",
-        "correct": true,
-        "why false": ""
-      }
-    ]
-  },
-  {
-    "id": 30,
-    "question": "Wstaw odpowiednie słowa do podanego opisu przejścia (tranzycji) w diagramie stanów: [________] [warunek] / akcja",
-    "options": [
-      {
-        "text": "zdarzenie uruchamiające",
-        "correct": true,
-        "why false": ""
-      },
-      {
-        "text": "akcja",
-        "correct": false,
-        "why false": "Action comes after the slash."
-      }
-    ]
-  },
-  {
-    "id": 31,
-    "question": "Na jakich typach diagramu ERD może wystąpić związek wiele do wielu?",
-    "options": [
-      {
-        "text": "logicznym",
-        "correct": false,
-        "why false": "Logical models usually resolve M:N relationships."
-      },
-      {
-        "text": "fizycznym",
-        "correct": false,
-        "why false": "Physical models cannot support M:N; they must be resolved into associative tables."
-      },
-      {
-        "text": "konceptualnym",
-        "correct": true,
-        "why false": ""
-      }
-    ]
-  }
-]}
+    {
+      "id": 1,
+      "question": "Na diagramie aktywności węzeł decyzyjny pozwala na wybór więcej niż dwóch ścieżek alternatywnych",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Aktywności wewnątrz danego stanu na diagramie STD są poprzedzone słowem kluczowym",
+      "options": [
+        {
+          "text": "Action",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Exit",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Return",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Entry",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Do",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Wymień trzy główne perspektywy jakich można użyć przy tworzeniu klas",
+      "options": [
+        {
+          "text": "perspektywa specyfikacyjna",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "perspektywa implementacyjna",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "perspektywa logiczna",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "perspektywa pojęciowa",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "perspektywa programowa",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Który ze stereotypów może występować na diagramie komponentów",
+      "options": [
+        {
+          "text": "include",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "draft",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "entity",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Na diagramie czynności węzeł scalenia jest",
+      "options": [
+        {
+          "text": "węzłem sterującym, który dzieli przepływ na wiele jednoczesnych przepływów",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "elementem synchronizującym — nie synchronizuje według prezentacji",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "węzłem, który scala kilka równolegle wykonywanych przepływów w jeden",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Model z prototypem ma cechy modelu iteracyjno-przyrostowego",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Wstaw brakujące słowo: a. identyfikuje czynność wykonywaną w momencie wyjścia obiektu z danego stanu, b. identyfikuje czynność automatycznie wykonywaną przy wejściu",
+      "options": [
+        {
+          "text": "a. exit, b. entry",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "a. entry, b. exit",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Przedstawiony na diagramie sekwencji fragment scenariusza dotyczący komunikacji pomiędzy obiektami w sytuacji poprawnego oraz błędnego logowania powinien zostać oznaczony słowem kluczowym",
+      "options": [
+        {
+          "text": "loop",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "opt",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "alt",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "break",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Na diagramie sekwencji nie można przedstawić procesów równoległych",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Związki na diagramie przypadków użycia mogą opisywać zależności pomiędzy takimi elementami jak",
+      "options": [
+        {
+          "text": "agregacja przypadków użycia",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "rozszerzający przypadek użycia = extend",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "bazowy przypadek użycia",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "hierarchia przypadków użycia",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "zawierany przypadek użycia = include",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Dopasuj odpowiedzi do pytań dotyczących zamieszczonego rysunku: Przyjęcie do szpitala ----<<include>>----> Przydzielenie łóżka",
+      "options": [
+        {
+          "text": "a. przydzielenie łóżka, b. przyjęcie do szpitala",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "a. przyjęcie do szpitala, b. przydzielenie łóżka",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Elementami diagramu wdrożenia są",
+      "options": [
+        {
+          "text": "węzły",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "zależności",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "czynności",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "asocjacje",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "stany obiektów",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Interfejsy na diagramie komponentów nie zapewniają wymiany danych pomiędzy komponentami",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Partycja aktywności (tor/swimlane) to część diagramu czynności, która grupuje czynności charakteryzujące się podobnymi cechami (np. odpowiedzialnością)",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Dopasuj odpowiedzi do pytań: a. Dla jakiego modelu cyklu życia systemu istnieje możliwość szkoleń zanim zbudowany zostanie pełen system? b. Który model cyklu życia systemu jest jednym z najpopularniejszych podejść do procesu testowania?",
+      "options": [
+        {
+          "text": "a. model z prototypem, b. model V",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "a. model V, b. model z prototypem",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Na diagramie klas może wystąpić klasa asocjacyjna",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Klucz obcy może przyjmować wartość NULL",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Ścieżki komunikacji pomiędzy węzłami diagramu wdrożenia są określane przy pomocy stereotypu, który określa rodzaj komunikacji",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Dwie klasy mogą być powiązane ze sobą kilkoma asocjacjami",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Klucz główny może być utworzony na",
+      "options": [
+        {
+          "text": "tylko na jednej kolumnie",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "na jednej lub większej liczbie kolumn",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Węzły na diagramie wdrożenia odpowiadają różnym urządzeniom. Nie można w tych węzłach wskazywać oprogramowania systemowego, serwerowego i bazodanowego. Dozwolone jest umieszczanie w węzłach tylko modułów projektowanego systemu",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Do graficznego prezentowania scenariuszy służą diagramy",
+      "options": [
+        {
+          "text": "przypadków użycia",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "sekwencji",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "czynności",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "aktywności",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "wdrożenia",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Dopasuj odpowiednie słowa do podanego tekstu: a. Określa komponent reprezentujący tabelę bazy danych, b. Określa komponent reprezentujący dokument zawierający kod źródłowy lub dane",
+      "options": [
+        {
+          "text": "a. entity, b. file",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "a. file, b. entity",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Przypadek użycia połączony z innym przypadkiem (głównym) powiązaniem typu include będzie częścią przepływu przypadku głównego, kiedy zostanie spełniony wcześniej określony warunek",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Wstaw odpowiednie słowa do podanego opisu przejścia (tranzycji) w diagramie stanów [..........][..........]/[..........]",
+      "options": [
+        {
+          "text": "warunek, zdarzenie uruchamiające, akcja",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "zdarzenie uruchamiające, warunek, akcja",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "akcja, zdarzenie uruchamiające warunek",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "question": "Na jakich typach diagramu ERD może wystąpić związek wiele-do-wielu",
+      "options": [
+        {
+          "text": "logicznym",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "fizycznym",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "konceptualnym",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Akronim UML znaczy",
+      "options": [
+        {
+          "text": "Unified Modeling Language",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Unified Modern Licence",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Universal Markable Language",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "United Modeling Language",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "question": "W przypadku węzła decyzyjnego na diagramie czynności, liczba ścieżek z niego wychodzących musi być równa",
+      "options": [
+        {
+          "text": "co najmniej 1",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "nie ma żadnego ograniczenia",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "co najmniej 3",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "co najmniej 2",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "question": "W ramach opisu klas istnieje ile selektorów dostępu?",
+      "options": [
+        {
+          "text": "4",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Systemy oparte o Relacyjne Bazy Danych nadają się do modelowania UML w sposób bezpośredni",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Upływ czasu na diagramie sekwencji jest reprezentowany przez linię",
+      "options": [
+        {
+          "text": "pionową",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "diagram sekwencji nie jest diagramem dynamicznym, więc upływ czasu nie jest na nim przedstawiany",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "poziomą",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "question": "Wskaż zdanie FAŁSZYWE dotyczące diagramu stanów",
+      "options": [
+        {
+          "text": "stan końcowy nie musi być dostępny dla każdego stanu",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "dany warunek powinien powodować przejście z każdego stanu tylko do jednego innego stanu",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "system zawsze musi znajdować się w jakimś stanie",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "każdy stan powinien być dostępny ze stanu początkowego",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "question": "Która strzałka oznacza wywołanie asynchroniczne na diagramie sekwencji?",
+      "options": [
+        {
+          "text": "Strzałka z otwartym grotem (niezamalowanym, same kreski)",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Dopasuj selektor dostępu do jego symbolu",
+      "options": [
+        {
+          "text": "public, protected, private, package",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "package, protected, private, public",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "private, package, protected, public",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "public, protected, package, private",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "question": "W normalizacji baz danych wyróżniamy postaci normalne, ile jest uznawanych za podstawowe?",
+      "options": [
+        {
+          "text": "3",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "question": "W RDB stosowaną powszechnie notacją jest?",
+      "options": [
+        {
+          "text": "Notacja Booch'a",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Notacja Barkera",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Notacja Moode'go",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Notacja Zwillinga",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Wskaż elementy wymagane na każdym diagramie sekwencji:",
+      "options": [
+        {
+          "text": "węzeł decyzyjny",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "węzeł początkowy",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "relacja pomiędzy obiektami",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "połączenie (join)",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "węzeł końcowy",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Przypadek użycia możemy opisać za pomocą następujących cech: nazwę, wymagania specjalne, warunki końcowe, zależności i relacje, przepływ zdarzeń, opis, warunki wstępne",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "question": "Przypadki użycia mogą być specyfikowane tylko przez scenariusze alternatywne, opisujące każdy możliwy wariant działania UseCase (UC)",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "question": "W UML wyróżniamy perspektywy (widoki). Ile jest ich podstawowych wariantów?",
+      "options": [
+        {
+          "text": "5",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "question": "UML składa się z:",
+      "options": [
+        {
+          "text": "encji",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "związków",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "elementów",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "krotek",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagramów",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "question": "Dopasuj: Kompozycja i Agregacja",
+      "options": [
+        {
+          "text": "silna agregacja, powiązanie klas",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "słaba kompozycja, powiązanie klas",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "silna agregacja, słaba agregacja",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "question": "Diagram przypadków użycia jest typowym przykładem diagramu strukturalnego",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "question": "Scenariusz jest opisem działania przypadku użycia. Każdemu przypadkowi użycia przyporządkowany jest jeden scenariusz",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "question": "W relacyjnych bazach danych powiązania pomiędzy encjami mogą być:",
+      "options": [
+        {
+          "text": "jeden do wielu",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "wiele do wielu",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "jeden do jednego",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "żaden do wielu",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "wiele do jednego",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "question": "Wymień wszystkie diagramy dynamiczne (behawioralne)",
+      "options": [
+        {
+          "text": "diagram stanów",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "diagram wdrożenia",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagram klas",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagram przypadków użycia",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "diagram kooperacji",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "question": "Systemy bazodanowe oparte o noSQL nadają się do modelowania w UML w sposób bezpośredni",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "question": "Celem użycia UML jest:",
+      "options": [
+        {
+          "text": "obrazowanie",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "tworzenie",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "opisywanie",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "specyfikowanie",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "dokumentowanie",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "question": "Diagram sekwencji składa się z następujących elementów",
+      "options": [
+        {
+          "text": "linie życia",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "relacje między obiektami",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "czas",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "obiekty",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "komunikaty",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "question": "Na diagramy interakcji składają się:",
+      "options": [
+        {
+          "text": "diagram klas",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagram strukturalny",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagram kooperacji",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "diagram behawioralny",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagram sekwencji",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "question": "Tabela 1 ma klucz główny na kolumnie o nazwie id_tab1. W Tabeli 2 występuje klucz główny na kolumnie id_tab2 oraz kolumna o nazwie id_tab1. Jaki to związek?",
+      "options": [
+        {
+          "text": "wiele do wiele",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "jeden do wiele",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "jeden do jeden",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "question": "Silna agregacja to inna nazwa którego ze związków między klasami",
+      "options": [
+        {
+          "text": "asocjacja",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "kompozycja",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "zależność",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "question": "Encja wtrącona, stworzona w celu usunięcia związku wiele-do-wielu nazywana jest",
+      "options": [
+        {
+          "text": "encją",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "bazową",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "asocjacyjną",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "kompozycyjną",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "statyczną",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "question": "W przypadku węzła decyzyjnego na diagramie czynności, liczba ścieżek z niego wychodzących musi być równa",
+      "options": [
+        {
+          "text": "co najmniej dwa",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "więcej niż dwa",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "równe dwa",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "dwa",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "question": "Gdy wychodzimy ze stanu S1 przy użyciu przejścia do stanu S2, to",
+      "options": [
+        {
+          "text": "S1 staje się nieaktywny a S2 aktywuje się dopiero kiedy otrzyma odpowiedni komunikat",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "S1 staje się nieaktywny a S2 aktywny",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "S1 pozostaje nadal aktywny i S2 staje się aktywny",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "question": "Na diagramie wdrożenia węzły mogą być zagnieżdżone",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "question": "Osadzenie komponentów i artefaktów na odpowiednich węzłach jest częścią procesu tworzenia diagramu",
+      "options": [
+        {
+          "text": "czynności",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "komponentów",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "use case",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "wdrożenia",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "question": "Na diagramie use case każdy przypadek użycia musi być w bezpośredniej interakcji z co najmniej jednym aktorem",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "question": "Te same komponenty mogą zostać wykorzystane podczas projektowania różnych systemów informatycznych",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "question": "Diagram klas pozwala zamodelować jak wygląda przepływ danych pomiędzy klasami",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "question": "Tworząc model systemu przy użyciu diagramów UML, zaleca się używanie własnych, dodatkowych elementów graficznych, które są specyficzne dla danego systemu",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "question": "Prostokąty umieszczone na linii życia obiektu oznaczają, że obiekt jest tworzony w momencie wywołania",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "question": "Diagram czynności nie posiada węzła końcowego czynności w postaci tzw. bawolego oka, w przypadku kiedy czynności realizowane są w pętli",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "question": "Węzły w diagramie wdrożenia nie mogą być zagnieżdżone",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "question": "Przydziel odpowiedzi do podanych stwierdzeń",
+      "options": [
+        {
+          "text": "a. nazwa tabeli, b. nazwa kolumny będącej kluczem obcym",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "a. nazwa kolumny będącej kluczem obcym, b. nazwa tabeli",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "question": "Aktor na diagramie przypadków użycia to",
+      "options": [
+        {
+          "text": "osoba",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "inny system",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "urządzenie nie będące częścią modelowego systemu",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "question": "Mamy dwie klasy: Książka i Rozdział. Występuje między nimi agregacja",
+      "options": [
+        {
+          "text": "częściowa",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "całkowita",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "część-całość",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "question": "Fragment na diagramie sekwencji typu ref reprezentuje interakcję, która nie została zdefiniowana w innym miejscu modelu systemu",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "question": "Nadawca (obiekt) komunikatu asynchronicznego musi czekać na odpowiedź zwrotną obiektu, który jest odbiorcą komunikatu",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "question": "Komunikaty na diagramie sekwencji mogą być",
+      "options": [
+        {
+          "text": "zwrotne",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "synchroniczne",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "wywołujące",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "asynchroniczne",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "pytające",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "question": "Romb na diagramie czynności może odpowiadać",
+      "options": [
+        {
+          "text": "decyzji (if-else)",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "zmiany kierunku przepływu",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "połączeniu przepływów",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "question": "Przypadki użycia określają",
+      "options": [
+        {
+          "text": "wymagania funkcjonalne i niefunkcjonalne systemu",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "wymagania niefunkcjonalne systemu",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "wymagania funkcjonalne systemu",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "question": "Diagramy wdrożenia w języku UML przedstawiają fizyczny widok systemu w planowanym środowisku",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "question": "Akcje na diagramie czynności są obrazowane przy pomocy",
+      "options": [
+        {
+          "text": "prostokąty",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "kwadratów o zaokrąglonych rogach",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "prostokątach o zaokrąglonych rogach",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "question": "Każdy system informatyczny powinien (musi) być zamodelowany przy użyciu wszystkich diagramów UML",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "question": "Zaznacz rodzaje widoczności, które mogą wystąpić na diagramie klas",
+      "options": [
+        {
+          "text": "prywatny",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "chroniony",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "pakietowy",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "publiczny",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "abstrakcyjny",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "question": "Każda tabela musi mieć klucz obcy",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "question": "Analityk biznesowy przygotował wymagania tworzonego systemu mówiące, że system ma być dostępny codziennie w godzinach 1:00 - 22:00. Do jakiej litery odpowiadające odpowiedniej kategorii wymagań można przypisać takie wymaganie w modelu FURPS",
+      "options": [
+        {
+          "text": "F",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "U",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "R",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "P",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "S",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "question": "Fragmenty na diagramie sekwencji mogą dotyczyć",
+      "options": [
+        {
+          "text": "komunikatów",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "odniesienia do interakcji przedstawionej na innym diagramie",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "pętli",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "powtórzeń",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "scenariuszy alternatywnych",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "question": "Jak nazywamy punkt łączący komponent, jego interfejsy ze środowiskiem zewnętrznym w którym działa",
+      "options": [
+        {
+          "text": "port",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "wejście",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "wyjście",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "question": "Diagram komponentów jest diagramem dynamicznym",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "question": "W przypadku związku rozszerzenia na diagramie use case, funkcja rozszerzająca jest wykonywana automatycznie",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "question": "Stany na diagramie stanów mogą być",
+      "options": [
+        {
+          "text": "spoczynkowe",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "pośrednie",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "czynne",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "bierne",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "inicjujące",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "question": "Ograniczenie {complete} w związku uogólnienia pomiędzy klasami oznacza",
+      "options": [
+        {
+          "text": "że zestaw podklas przypisanych danej klasie nie jest pełny",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "że każda podklasa posiada tylko jedną klasę bezpośrednio nadrzędną",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "że określone klasy mogą mieć wspólne podklasy",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "question": "Integralność referencyjna związana jest z ograniczeniami wartości klucza obcego",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "question": "Ikona na ekranie Menu Użytkownika jest",
+      "options": [
+        {
+          "text": "obiektem sterującym",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "obiektem interfejsu",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "obiektem encją",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "question": "Płatność kartą ----|> Płatność (generalizacja) LUB Płatność kartą --> Płatność (extend). Na podstawie opisu tekstowego trudno jednoznacznie stwierdzić bez obrazka, ale 'extension points' sugeruje extend.",
+      "options": [
+        {
+          "text": "Realizacja",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Asocjacja",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Zależność",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "question": "Każdy Przypadek Użycia (ang. UC, pl. PU) powiązany jest dokładnie z jednym scenariuszem",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "question": "Określ liczebności. 0..* to:",
+      "options": [
+        {
+          "text": "0..* od 0 do wielu",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "k..n od k do n",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "0..1 liczebność binarna",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "1..* od jednego do wielu",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "* dowolna ilość",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "1,3,5,7 jeden, trzy, pięć lub siedem",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "1 dokładnie jeden",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "n dokładnie n",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "question": "Na linii życia obiektu może się pojawić się prostokąt oznaczający jego zajętość wykonywaniem pewnej czynności zanim dotrze do niego komunikat",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "question": "Belki na diagramie czynności służą do modelowania działań",
+      "options": [
+        {
+          "text": "realizowanych synchronicznie",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": ",które są realizowane przez metody tej samej klasy",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": ",które są działaniami asynchronicznymi",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "question": "Jednocześnie do systemu powinno być w stanie zalogować się 1000 użytkowników. Powyższe wymaganie jest przykładem wymagania:",
+      "options": [
+        {
+          "text": "niefunkcjonalnego",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "funkcjonalnego",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "question": "W metodach zwinnych wytwarzania oprogramowania klient określa wymagania dla każdego przyrostu",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "question": "Który z diagramów przedstawia historię życia obiektu?",
+      "options": [
+        {
+          "text": "diagram obiektów",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagram stanów",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "diagram sekwencji",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagram klas",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "question": "Na diagramie sekwencji obiekty mogą przyjmować stereotypy:",
+      "options": [
+        {
+          "text": "Obiekt klasy nadrzędnej",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Obiekt klasy sterującej",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Aktor",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Obiekt klasy potomnej",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Obiekt klasy granicznej",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Granica systemu",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "question": "Diagram komponentów jest jedną z technik przedstawienia modelu logicznego projektowanego systemu informatycznego",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "question": "Na diagramie komponentów, porty nie łączą interfejsów wewnętrznych z odpowiedzialnymi za nie fragmentami wewnętrznymi komponentu",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "question": "Silna agregacja to inna nazwa, którego ze związków klasami?",
+      "options": [
+        {
+          "text": "kompozycja",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "question": "Kompozycja jest przykładem wzorcowo skomponowanego systemu zawierającego wszystkie niezbędne elementy języka UML",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "question": "Ile jest podstawowych diagramów behawioralnych? (cyfra)",
+      "options": [
+        {
+          "text": "5",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "question": "Wymień diagramy opisujące dynamiczny aspekt systemu.",
+      "options": [
+        {
+          "text": "Diagram klas",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Diagram interakcji",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Diagram przypadków użycia",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Diagram czynności",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Diagram stanów",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "question": "Wymień diagramy opisujące statyczny aspekt systemu",
+      "options": [
+        {
+          "text": "Diagram interakcji",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Diagram komponentów",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Diagram obiektów",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Diagram klas",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Diagram wdrożenia",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "question": "Diagram czynności modeluje zagadnienia z zakresu odpowiedzialności elementów bądź użytkowników systemu.",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "question": "W Diagramie Sekwencji taka strzałka (wypełniony grot) ma znaczenie: Standardowe przekazanie aktywności i kontroli. Nadawca zawiesza działanie...",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "question": "Ile jest podstawowych diagramów strukturalnych? (cyfra)",
+      "options": [
+        {
+          "text": "4",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "question": "W Diagramie Sekwencji taka strzałka (otwarty grot) ma znaczenie: Nadawca komunikatu przekazuje sterowanie do odbiorcy oraz kończy własną działalność nie oczekując na odpowiedź",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "question": "Diagram wdrożenia jest diagramem, który przedstawia architekturę wykonania systemu...",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "question": "Ile jest podstawowych diagramów opisujących interakcje w systemie (cyfra)",
+      "options": [
+        {
+          "text": "2",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "question": "Diagram kooperacji jest diagramem, który przedstawia architekturę wykonania systemu...",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "question": "Ma zadanie zilustrować przepływ komunikatów pomiędzy obiektami umiejscowiony w linii czasowej",
+      "options": [
+        {
+          "text": "Diagram Klas",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Diagram Interakcji",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Diagram Stanu",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Diagram Sekwencji",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "question": "W Diagramie Sekwencji taka strzałka (otwarty grot) ma znaczenie: Nadawca komunikatu nie oczekuje na odpowiedź odbiorcy...",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "question": "W metodykach zwinnych scenariusze są przedstawiane w postaci",
+      "options": [
+        {
+          "text": "diagramu scenariuszy",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "historyjek (opowiadań)",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "“user stories”",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "diagramu wymagań",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "question": "Ograniczenie (complete)[kompletność = pełno] w związku uogólnienia pomiędzy klasami oznacza",
+      "options": [
+        {
+          "text": "w hierarchii klas określone klasy mogą mieć wspólne podklasy",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "każda podklasa w hierarchii klas posiada tylko jedną klasę bezpośrednio nadrzędną",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "zestaw podklas przypisanych danej klasie nie jest pełny",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "pełen zestaw podklas dla danej klasy",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "question": "Dopasuj elementy fragmenty diagramu sekwencji do opisów",
+      "options": [
+        {
+          "text": "assert - Określa, że interakcje zawarte w prostokącie tego rodzaju fragmentu muszą zachodzić dokładnie we wskazany sposób...",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "loop - powtarza interakcje zawarte wewnątrz fragmentu określoną liczbę razy...",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "alt - Wykonany zostanie zestaw instrukcji związany z warunkiem, który jako pierwszy przyjmie wartość prawda...",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "opt - Interakcje zawarte w tego rodzaju fragmencie zostaną wykonane jedynie w przypadku, gdy warunek będzie mieć wartość logiczną prawda...",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "question": "System kontroli wersji mogą być stosowane w procesie zarządzania zmianą dokumentacji",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "question": "Interfejs dostarczany (lollipop) umożliwia pozyskanie danych z komponentu. Na rysunku (brak) zwykle oznacza to, że komponent udostępnia ten interfejs.",
+      "options": [
+        {
+          "text": "komponent9",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "obu",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "komponent8",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "question": "Dany jest fragment diagramu aktywności z klepsydrą. Właściwy tekst przy klepsydrze to:",
+      "options": [
+        {
+          "text": "24 godziny - klepsydra oznacza zdarzenie czasowe",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "20 użytkowników - klepsydra oznacza zdarzenie i w tym wypadku, chodzi o potwierdzenie przez min. 20 użytkowników",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "100 linków - klepsydra oznacza zdarzenie wielokrotne i system może wysłać maksymalnie 100 linków",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "question": "Dopasuj odpowiedzi do pytań dotyczących zamieszczonego rysunku (Relacja Extend)",
+      "options": [
+        {
+          "text": "Który przypadek użycia jest rozszerzanym? - Płatność",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Który przypadek użycia jest rozszerzającym? - Płatność kartą",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "question": "Instancja encji odpowiada w tabeli:",
+      "options": [
+        {
+          "text": "kolumnie",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "wierszowi",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "question": "Określ rodzaj związku między przypadkami użycia (Płatność <--- Płatność kartą z Extension points)",
+      "options": [
+        {
+          "text": "Związek rozszerzania",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Asocjacja",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Związek uogólnienia",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Związek agregacji",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Związek zawierania",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "question": "Deskryptor odpowiada w tabeli:",
+      "options": [
+        {
+          "text": "kolumnie",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "wierszowi",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "question": "Węzeł pokazany na obrazku to węzeł rozwidlenia (Fork - belka). Rozbija on jeden przepływ na dwa lub więcej przepływy:",
+      "options": [
+        {
+          "text": "alternatywne",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "wykluczające się",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "równoległe",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "question": "Diagramy wdrożenia istotną rolę odgrywają przy wdrażaniu dużych, rozproszonych systemów.",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "question": "Dopasuj odpowiedzi do pytań:",
+      "options": [
+        {
+          "text": "Z czym wiąże się komunikat przesyłany pomiędzy obiektami? - operacją przypisaną do klasy",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Z czym wiąże się linia życia obiektu? - instancją klasy",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "question": "Diagram czynności może zawierać element określany jako magazyn danych <<datastore>>",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "question": "Reguły dotyczące więzów integralności i kluczy obcych to m.in.:",
+      "options": [
+        {
+          "text": "Reguła SET NULL",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Reguła SET ALLOW",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Reguła RESTRICTED",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Reguła CASCADED",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "question": "Model systemu jest dokładnym odwzorowaniem tworzonego systemu",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "question": "Na diagramie STD modelujemy stany w jakich może znaleźć się system i przejścia między nimi. System może znajdować się w każdym ze stanów tylko jeden raz.",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "question": "Diagramy maszyny stanowej wykorzystywane są w następujących systemach informatycznych:",
+      "options": [
+        {
+          "text": "systemy wbudowane, np. w pralkach, mikrofalówkach",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "systemy czasu rzeczywistego oraz krytyczne ze względu na bezpieczeństwo",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "urządzenia dedykowane, np. bankomaty",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "system finansowy-księgowy",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "sieci społecznościowe",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "system kadrowo-płacowy",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "question": "Na diagramie wdrożenia wystąpić mogą następujące elementy:",
+      "options": [
+        {
+          "text": "Klasy",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Węzły",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Urządzenia",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Artefakty",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Aktorzy",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "question": "Agregacja częściowa to:",
+      "options": [
+        {
+          "text": "słaba kompozycja",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "silna agregacja",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "słaba agregacja",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "powiązanie klas",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "question": "Jakie związki można spotkać na diagramie przypadków użycia?",
+      "options": [
+        {
+          "text": "uogólnienie",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "zależność",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "realizację",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "asocjację",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "agregację",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "question": "Asocjacja pomiędzy klasami modelowana jest w postaci linii, dodatkowo może ona posiadać strzałkę nawigacji.",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "question": "W obiektowym podejściu do projektowania systemów nie należy używać diagramów ERD",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "question": "Przedstawiony diagram na obrazku to",
+      "options": [
+        {
+          "text": "diagram kooperacji",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "question": "Ten diagram to przykład",
+      "options": [
+        {
+          "text": "diagram Obiektów",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagram sekwencji",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "diagram przejśc",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagram aktywnosci",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "question": "Przedstawiony diagram to przykład",
+      "options": [
+        {
+          "text": "diagramu klas",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagramu wdrożenia",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "diagramu komponentów",
+          "correct": true,
+          "why false": ""
+        },
+        {
+          "text": "diagramu obiektów",
+          "correct": false,
+          "why false": ""
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "question": "Diagram przejść (stanów) modeluje zagadnienia z zakresu odpowiedzialności elementów bądź użytkowników systemu",
+      "options": [
+        {
+          "text": "Prawda",
+          "correct": false,
+          "why false": ""
+        },
+        {
+          "text": "Fałsz",
+          "correct": true,
+          "why false": ""
+        }
+      ]
+    }
+  ]
+}
+
